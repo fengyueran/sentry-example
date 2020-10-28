@@ -553,7 +553,7 @@ module.exports = function (webpackEnv) {
         release: env.raw.VERSION,
         configFile: "sentry.properties",
         setCommits: {
-          previousCommit: "b1a062c6e1d5cd715a804c7bcf139c17844e0b46",
+          previousCommit: "294ccfe81a13420dbc055931d01a5b54ae6fa6ce",
         },
       }),
       // Generates an `index.html` file with the <script> injected.
