@@ -553,6 +553,7 @@ module.exports = function (webpackEnv) {
         release: env.raw.VERSION,
         configFile: "sentry.properties",
         setCommits: {
+          auto: true,
           previousCommit: "294ccfe81a13420dbc055931d01a5b54ae6fa6ce",
         },
       }),
