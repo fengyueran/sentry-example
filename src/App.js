@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import * as Sentry from "@sentry/react";
+
+Sentry.init({
+  dsn:
+    "https://726ecd0052654e02af76728a9933a8d7@o416397.ingest.sentry.io/5495712",
+});
+
+Sentry.configureScope(function (scope) {
+  scope.setUser({
+    id: "1",
+    email: "316032603@qq.com",
+    username: "xhm",
+    domain: "domain",
+  });
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <button
+      onClick={() => {
+        throw new Error("test sentry");
+      }}
+    >
+      throw
+    </button>
   );
 }
 
