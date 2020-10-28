@@ -4,7 +4,7 @@ import * as Sentry from "@sentry/react";
 
 Sentry.init({
   dsn:
-    "https://f342c52cd67d4f7282e65b1e0ea45b4f@o416397.ingest.sentry.io/5496103",
+    "https://b826a04a4382492398fedb9749ca9474@o416397.ingest.sentry.io/5496133",
 });
 
 Sentry.configureScope(function (scope) {
