@@ -552,10 +552,10 @@ module.exports = function (webpackEnv) {
         include: "./build",
         release: env.raw.VERSION,
         configFile: "sentry.properties",
-        setCommits: {
-          auto: true,
-          previousCommit: "294ccfe81a13420dbc055931d01a5b54ae6fa6ce",
-        },
+        // setCommits: {
+        //   auto: true,
+        //   previousCommit: "294ccfe81a13420dbc055931d01a5b54ae6fa6ce",
+        // },
       }),
       // Generates an `index.html` file with the <script> injected.
       new HtmlWebpackPlugin(

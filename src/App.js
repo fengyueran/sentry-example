@@ -4,7 +4,7 @@ import * as Sentry from "@sentry/react";
 
 Sentry.init({
   dsn:
-    "https://b826a04a4382492398fedb9749ca9474@o416397.ingest.sentry.io/5496133",
+    "https://c4c3b2993c7d45228afa69deabac9e6f@o416397.ingest.sentry.io/5497056",
 });
 
 Sentry.configureScope(function (scope) {
@@ -20,7 +20,7 @@ function App() {
   return (
     <button
       onClick={() => {
-        throw new Error("test sentry track commit 66666");
+        throw new Error("test sentry track commit 3.0");
       }}
     >
       throw
