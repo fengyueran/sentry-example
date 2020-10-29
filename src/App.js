@@ -20,7 +20,7 @@ function App() {
   return (
     <button
       onClick={() => {
-        throw new Error("test sentry track commit 4.0");
+        throw new Error("test sentry track commit 5.0");
       }}
     >
       throw
